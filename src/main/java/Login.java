@@ -1,16 +1,10 @@
+import java.util.Scanner;
+
 public abstract class Login {
-    protected String usuario;
-    protected String senha;
+    protected static String usuario;
+    protected static String senha;
 
-    public Login() {
-    }
-
-    public boolean menssagem() {
-        if (logIn(this.usuario, this.senha)) {
-
-        }
-        return false;
-    }
+    public Login() {}
 
     abstract boolean logIn(String usuario, String senha);
 
