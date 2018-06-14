@@ -9,13 +9,14 @@ public class Main {
         System.out.print("Digite sua senha: ");
         String senha = sc1.next();
 
-        boolean loop = true;
-        while (loop) {
+        int opcao = 0;
+        while (opcao != 3) {
             System.out.println("Escolha sua Opção: \n " +
                     "1 NETFLIX\n" +
                     " 2 SPOTIFY\n" +
                     " 3 Sair");
-            int opcao = sc1.nextInt();
+            opcao = sc1.nextInt();
+
             if (opcao == 1) {
                 login = new Netflix(usuario, senha);
                 login.logIn(usuario, senha);
@@ -24,7 +25,6 @@ public class Main {
                 login.logIn(usuario, senha);
             } else if (opcao == 3) {
                 System.out.println("Obrigado por usar nossa Plataforma!");
-                loop = false;
             } else {
                 System.out.println("Opção inválida, por favor selecione uma opção válida!" +
                         "");

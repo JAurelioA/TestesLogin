@@ -23,17 +23,4 @@ public class Netflix extends Login {
         System.out.println("\n");
         return false;
     }
-
-    /*private void menu() {
-        boolean j=true;
-        while(j) {
-            System.out.println("Para desconectar do Netflix digite 1");
-            int opcao = sc2.nextInt();
-            if(opcao==1) {
-                System.out.println("Obrigado por usar Netflix! Volte Sempre");
-                logOut();
-                j=false;
-            } else {System.out.println("Opção inválida!");}
-        }
-    }*/
 }
