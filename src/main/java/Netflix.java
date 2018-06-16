@@ -6,21 +6,18 @@ public class Netflix extends Login {
     }
 
     @Override
-    boolean logIn(String usuario, String senha) {
+    void logIn(String usuario, String senha) {
         System.out.println("-----------------*-----------------");
         System.out.println("Usuario logado com sucesso!");
         System.out.println("Bem vindo à NETFLIX " + usuario + " Aproveite o nosso conteudo");
         System.out.println("-----------------*-----------------");
         Menu menu = new Menu();
         menu.menu();
-        logOut();
-        return true;
     }
 
     @Override
-    boolean logOut() {
+    void logOut(String usuario, String senha) {
         System.out.println("O usuário: " + usuario + " deslogou do Netflix");
         System.out.println("\n");
-        return false;
     }
 }
