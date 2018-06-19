@@ -2,8 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Validacao {
-    String usuario;
-    String senha;
+     String usuario;
+     String senha;
     Boolean acess = false;
 
     public Validacao (String usuario, String senha){
@@ -28,5 +28,4 @@ public class Validacao {
         }
 
     }
-
 }
